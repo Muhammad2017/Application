@@ -25,7 +25,11 @@ class CarsController < ApplicationController
   # POST /cars
   # POST /cars.json
   def create
-    @car = Car.new()
+  puts "debug ++++++++++++++++++++++ "
+  puts params.inspect
+  puts "debug ++++++++++++++++++++++ "
+  
+#@car = Car.new()
 @car = Car.new() 
 @car.firstname = params[:car][:firstname] 
 @car.lastname = params[:car][:lastname] 
